@@ -1,0 +1,46 @@
+$bgColor: rgba(234, 13, 105, 0.25);
+%bg {
+  background: $bgColor;
+  backdrop-filter: blur(175px);
+}
+
+%button {
+  width: 350px;
+  height: 56px;
+  background: #458FF6;
+  border-radius: 55px;
+  margin-bottom: 40px;
+}
+
+%white {
+  background: transparent;
+  color: #FFFFFF;
+  align-items: center;
+}
+
+%services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  %our {
+    color: rgba(246, 205, 69, 0.66);
+    background: transparent;
+
+  %width {
+    color: yellow;
+    width: 100px;
+    height: 2px;
+    background: #000;
+    margin-top: 2%;
+  }
+}
+}
+%about__work{
+  width: 82%;
+  height: 100px;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  padding: 8%;
+}
