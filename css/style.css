@@ -126,13 +126,24 @@ body {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 90% !important;
+  }
+}
+@media (max-width: 756px) {
+  .search2 {
+    width: 12vw;
+    margin: 0 0.1vw !important;
+  }
+}
 .container {
-  width: 1140px;
+  width: 90%;
   margin: auto;
 }
 
 #header {
-  padding-top: 30px;
+  padding-top: 3%;
 }
 #header .header {
   display: flex;
@@ -217,8 +228,16 @@ body {
 #block .block__services__best {
   margin-top: 2%;
 }
-#block .block__services--search {
+#block .block__services__desk--search {
   padding: 10px;
+}
+#block .block__services__desk--search:hover {
+  transition: 2s;
+  transform: rotate(10deg);
+  width: 12vw;
+  margin: 0 1.5vw;
+}
+#block .block__services__desk--search--search {
   margin-top: 10%;
   background: rgba(69, 143, 246, 0.64);
   width: 350px;
@@ -226,25 +245,16 @@ body {
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
 }
-#block .block__services--search:hover {
-  transition: 2s;
-  transform: rotate(10deg);
-}
-#block .block__services--search--search2 {
-  width: 91px;
+#block .block__services__desk--search--search2 {
+  width: 90px;
   height: 90px;
   margin-top: 3%;
 }
-#block .block__services--search--search3 {
+#block .block__services__desk--search--search3 {
   margin-top: 3%;
 }
-#block .block__services--search--search4 {
+#block .block__services__desk--search--search4 {
   margin-top: 3%;
-}
-#block .block__services__desk {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 #block .block__services__buttons {
   margin-left: 35%;
@@ -418,17 +428,13 @@ body {
   color: #FFFFFF;
 }
 
-#circle {
-  margin-top: 50px;
-}
 #circle .circle {
   display: flex;
   margin-top: 50px;
 }
 #circle .circle__time {
-  height: 399px;
-  width: 360px;
-  background: rgba(13, 234, 32, 0.16);
+  height: 430px;
+  background: #d1d5db;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
   padding: 2%;
@@ -440,6 +446,11 @@ body {
 #circle .circle__time--search--search4 {
   margin-top: 30px;
   border-radius: 50px;
+}
+#circle .circle__time--search--search4--read {
+  margin-top: 19px;
+  margin-left: 35%;
+  color: #458FF6;
 }
 #circle .circle__time__all {
   width: 100px;
