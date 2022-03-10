@@ -251,8 +251,8 @@ body {
   margin-left: 40%;
 }
 #block .block__dws--butt:hover {
-  transition: 5s;
-  transform: rotate(-860deg);
+  background: yellow;
+  transition: 1.5s;
 }
 
 #text .text__pic {

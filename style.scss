@@ -159,8 +159,8 @@ body {
         border-radius: 55px;
         margin-left: 40%;
         &:hover{
-          transition: 5s;
-          transform: rotate(-860deg);
+          background: yellow;
+          transition: 1.5s;
         }
       }
     }
