@@ -15,39 +15,40 @@ body {
 //header
 #header {
   padding-top: 3%;
-  width: 30%;
 
   .header {
     display: flex;
     justify-content: space-between;
-    margin-left: 20%;
+    margin-left: 10%;
 
     &__nav {
       display: flex;
       justify-content: space-between;
-      margin-right: -300%;
 
-      &--item2 {
-        font-size: 18px;
-        line-height: 23px;
-        color: #1F1534;
-
-      }
-
+      //&--item2 {
+      //  font-size: 18px;
+      //  line-height: 23px;
+      //  color: #1F1534;
+      //}
       &--item {
+        display: inline-block;
+        color: #FFFFFF;
+        font-family: sans-serif;
         font-size: 18px;
         line-height: 23px;
-        color: #1F1534;
         opacity: 0.5;
         margin: 0 15px;
+
+        &:hover {
+          color: black;
+          border-bottom: 2px solid black;
+        }
       }
     }
   }
 }
 
 //header
-
-
 //hero
 #hero {
   .hero {
@@ -81,19 +82,17 @@ body {
         align-items: center;
         width: 200px;
         height: 56px;
-        background: #458FF6;
+        background: white;
         border-radius: 55px;
         margin-bottom: 40px;
 
         &:hover {
-          background: yellow;
-          transition: 2s;
-          transform: translateX(-50%) translateY(10px);
+          background: #458FF6;
         }
 
         &--white {
           background: transparent;
-          color: #FFFFFF;
+          color: #000000;
           align-items: center;
         }
       }
@@ -111,7 +110,6 @@ body {
 #block {
   .block {
     padding-bottom: 10%;
-
     &__servic {
       &__our {
         text-align: center;
@@ -152,7 +150,10 @@ body {
         border-radius: 20px;
         padding: 40px;
         margin-top: 3%;
-
+        &:hover{
+          transform: rotate(10deg);
+          transition: 1s;
+        }
         &__cub {
           &--search {
             margin-top: 14px;
@@ -171,12 +172,12 @@ body {
       &--butt {
         width: 22%;
         height: 56px;
-        background: #458FF6;
+        background: white;
         border-radius: 55px;
         margin-left: 40%;
 
         &:hover {
-          background: yellow;
+          background: #458FF6;
         }
       }
     }
@@ -188,9 +189,9 @@ body {
 //text
 #text {
   .text {
-    &--title {
-      width: 55%;
-    }
+    padding-bottom: 15%;
+    display: flex;
+    justify-content: space-between;
 
     &__pic {
       display: flex;
@@ -205,12 +206,11 @@ body {
 
 
         &__just {
-          font-style: normal;
           font-weight: 300;
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 21px;
+          line-height: 32px;
           color: #7D7987;
-          margin-top: 10%;
+          margin-bottom: 40px;
         }
 
         &--work {
@@ -235,6 +235,10 @@ body {
         }
       }
     }
+
+    &__photo {
+      width: 60%;
+    }
   }
 }
 
@@ -245,11 +249,8 @@ body {
 
 #text2 {
   .text2 {
-    margin-top: 10%;
-
-    &--title {
-      width: 65%;
-    }
+    display: flex;
+    justify-content: space-between;
 
     &__pic {
       display: flex;
@@ -261,21 +262,16 @@ body {
         line-height: 56px;
         color: rgba(69, 110, 246, 0.99);
 
-
-        &__just {
-          width: 100%;
-          font-style: normal;
+        &--just {
           font-weight: 300;
-          font-size: 18px;
-          line-height: 30px;
+          font-size: 15px;
+          line-height: 32px;
           color: #7D7987;
+          margin-bottom: 40px;
         }
 
         &--work {
-          width: 20%;
-          height: 2px;
           background: #1F1534;
-          margin: 30px 0;
         }
 
         &--btn {
@@ -294,6 +290,10 @@ body {
       }
 
     }
+
+    &__photo {
+      width: 60%;
+    }
   }
 }
 
@@ -301,9 +301,10 @@ body {
 
 //about
 #about {
-
   .about {
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
 
     .slick-prev {
       background: url("/img/Vec.svg") no-repeat center/20px;
@@ -324,10 +325,9 @@ body {
 
     .slick-dots {
       position: relative;
-      margin-top: 7%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      top: 50px;
 
       .slick-active button {
         background: chartreuse;
@@ -347,11 +347,10 @@ body {
     }
 
     &__work {
-      width: 82%;
-      height: 250px;
+      width: 70%;
       background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-      border-radius: 24px;
-      padding: 8%;
+      border-radius: 5%;
+      padding: 2%;
 
       &__saying {
         text-align: center;
@@ -371,6 +370,7 @@ body {
 
       &__par {
         &--box {
+          padding-top: 50px;
           display: flex;
           align-items: center;
         }
@@ -413,19 +413,26 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    flex-wrap: wrap;
+
 
     &__time {
-      width: 350px;
-      height: 430px;
-      background: rgb(209, 213, 219);
-      box-shadow: 10px 40px 50px rgba(209, 213, 219, 0.62);
+      width: 50%;
+      background: #FFFFFF;
+      box-shadow: 10px 40px 50px rgba(255, 255, 255, 0.63);
       border-radius: 20px;
       padding: 2%;
       margin: 90px 15px;
+      &:hover{
+        transform: rotate(10deg);
+        transition: 1s;
+      }
 
       &--search {
         margin-top: 30px;
+
+        &--img {
+          width: 50%;
+        }
 
         &--search4 {
           margin-top: 30px;
@@ -455,51 +462,33 @@ body {
 #footer {
 
   .footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -10%;
-    width: 100%;
+    width: 90%;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 17px;
+    padding: 5%;
+    margin-top: 3%;
+    color: #FFFFFF;
 
-    &__item {
-      @extend %about__work;
-
-      &__desk {
-        display: flex;
-        justify-content: space-between;
-        color: #FFFFFF;
-        margin-top: -5%;
-        width: 100%;
-        height: 100%;
-
-
-        &--puple {
-          margin-top: -60px;
-          display: flex;
-          justify-content: space-around;
-          color: #FFFFFF;
-          padding: 0 10px;
-          height: 50%;
-
-          .elem1 {
-            font-size: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            color: #FFFFFF;
-
-            &__desc {
-              display: flex;
-              justify-content: space-between;
-              color: #FFFFFF;
-              padding-bottom: 5px;
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
   }
+}
+
+.desc {
+  width: 50%;
+  margin-top: 2%;
+}
+
+.elem1 {
+  margin-top: 4%;
+}
+
+.fight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.google {
+  margin: 0 50px;
 }
 
 //FOOTER
